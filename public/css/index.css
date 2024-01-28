@@ -1,0 +1,391 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+}
+
+html, body {
+    width: 100% !important;
+    height: 100% !important;
+    background-color: #C3DCE8 !important;
+    color: #001F3F;
+}
+
+/* body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} */
+
+.container {
+    display: flex;
+    flex-direction: column;
+    background-color: #C3DCE8;
+    width: 100vw !important;
+    height: 100% !important;
+    position: relative;
+    border-radius: 20px;
+    background: #C3DCE8 !important;
+    box-shadow: inset 5px -5px 5px #8ea1a9,
+            inset -5px 5px 5px #f8ffff; 
+}
+
+nav {
+    padding: 2vw 8vw;
+    width: 100% !important;
+    position: sticky !important;
+    top: 0 !important;
+    height: 15vh !important;
+    border-radius: 20px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px; 
+    background: #C3DCE8;
+    box-shadow: inset 6px -6px 14px #8ea1a9,
+    inset -6px 6px 14px #f8ffff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+    z-index: 100;
+}
+
+nav .logo, nav .name {
+    width: 20%;
+    padding-left: 15vw;
+    padding-right: 5vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav .logo img{
+    width: 40vw;
+}
+
+nav .name img{
+    width: 14vw;
+
+}
+
+.content {
+    padding: 1.5vw 5vw;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center; 
+    flex-direction: column;
+    overflow-y: auto;
+    gap: 30px;
+    /* background-color: greenyellow; */
+}
+
+.content::-webkit-scrollbar {
+    display: none;
+}
+
+.post {
+    margin-top: 8vw;
+    position: relative;
+    padding: 5vw 8vw;
+    width: 100% !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    border-radius: 11px;
+    background: #c3dce8;
+    box-shadow: inset 5px -5px 10px #a6bbc5,
+            inset -5px 5px 10px #e0fdff;
+}
+
+.post .p-user {
+    /* height: 10vw; */
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1vw 0vw;
+    /* background-color: red; */
+}
+
+.p-user .userDetails {
+    display: flex;
+    align-items: center;
+    gap: 2vw;
+    height: 100%;
+    width: 55%;
+    color: #F88372;
+    text-decoration: none;
+    /* background-color: beige; */
+    margin-top: 2.5vw;
+    margin-left: 0.2vw;
+}
+
+.userDetails .username{
+    /* background-color: red; */
+    display: flex;
+    gap: 2vw;
+    font-size: 3.5vw;
+    font-weight: 600;
+    margin-top: -1.3vw;
+}
+
+.userDetails .username i{
+    font-size: 3vw;
+    line-height: 1;
+    font-weight: 400;
+    color: blue;
+    font-weight: bold;
+    margin-top: 0.6vw;
+}
+
+.userDetails .user-dp{
+    width: 13.5vw;
+    height: 13.5vw;
+    padding: 0.7vw;
+    overflow: hidden;
+    border-radius: 50%;
+    background: linear-gradient(225deg, #b0c6d1, #d1ebf8);
+    box-shadow:  -6px 6px 14px #a2b7c1,
+             6px -6px 14px #e4ffff;
+}
+
+.userDetails .user-dp img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.userOption i{
+    font-size: 5.5vw;
+    color: #001F3F;
+    cursor: pointer;
+    display: inline-block;
+}
+
+
+.p-image{
+    padding: 3vw !important;
+    border-radius: 29px;
+    background: #c3dce8;
+    box-shadow:  -5px -5px 5px #b0c6d1,
+    5px 5px 5px #d7f2ff;
+    /* overflow: hidden;*/
+    position: relative;   
+}
+
+.post .p-image img {
+    width: 35vh !important;
+    border-radius: 29px;
+    object-fit: cover; 
+}
+
+.post .p-description {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    text-align: left;
+    padding: 0vw 4vw;
+    font-size: 4vw;
+    font-weight: 600;
+    margin-bottom: 1vw;
+    margin-top: 2vw;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.post .p-reactions{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0vw 4vw;
+    gap: 3vw;
+    margin-bottom: -2vw;
+}
+
+.p-reactions a{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.post .p-likes-comments{
+    width: 100%;
+    display: flex;
+    gap: 1.8vw;
+    align-items: center;
+    text-align: left;
+    padding: 0vw 4vw;
+    font-size: 4vw;
+    margin-bottom: 1.5vw;
+    margin-top: 1vw;
+}
+
+footer {
+    padding: 3vw 8vw;
+    width: 100% !important;
+    position: sticky !important;
+    bottom: 0 !important;
+    height: 14vh;
+    border-radius: 20px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px; 
+    background: #C3DCE8;
+    box-shadow: inset 6px 6px 10px #8ea1a9,
+    inset 6px 6px 10px #f8ffff;
+}
+
+footer .f-icons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.f-icons img {
+    width: 14vw;
+}
+
+.EDoptions{
+    /* width: 40vw; */
+    height: 10vw;
+    display: none;
+    gap: 3vw;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 1vw 3vw;
+    z-index: 99;
+    border-radius: 26px;
+    background: #c3dce8;
+    box-shadow:  -5px 5px 3px #b3cad5,
+             5px -5px 3px #d3eefb;
+
+}
+
+.EDoptions i{
+    font-size: 5vw;
+}
+
+.EDoptions a{
+    display: flex;
+    gap: 1.5vw;
+    align-items: center;
+    text-decoration: none;
+    font-weight: 500;
+    color: #001F3F;
+}
+
+.EDoptions button{
+    border: none;
+    background-color: #C3DCE8;
+}
+
+.EDoptions .fa-trash-can{
+    color: red;
+    font-size: 4vw;
+}
+
+.commentOption{
+    width: 25vh !important;
+    position: absolute !important;
+    left: 50% !important;
+    top: 50% !important;
+    transform: translate(-50%, -50%) !important;
+    z-index: 99;
+    border-radius: 11px !important;
+    background: #c3dce8 !important;
+    box-shadow: inset 5px -5px 10px #a6bbc5,
+    inset -5px 5px 10px #e0fdff !important;
+    text-align: center !important;
+    padding: 5vw  !important;
+    display: none;
+    flex-direction: column !important;
+}
+
+
+.field input, textarea {
+    width: 100% !important;
+    font-size: 3.5vw !important;
+    font-weight: 600 !important;
+    outline: none !important;
+    border: none !important;
+    color: #595959 !important;
+    padding: 3vw 3vw !important;
+    border-radius: 25px !important;
+    background: #C3DCE8 !important;
+    box-shadow: inset 5px 5px 10px #babecc,
+                inset -5px -5px 10px #ffffff73 !important;
+}
+
+.field input:focus {
+    box-shadow: inset 3px 3px 4px #babecc,
+                inset -3px -3px 4px #ffffff73 !important;
+}
+
+textarea:focus {
+    box-shadow: inset 3px 3px 4px #babecc,
+                inset -3px -3px 4px #ffffff73 !important;
+}
+
+
+.field label {
+    pointer-events: none;
+    color: #666666;
+    font-size: 4vw;
+    font-weight: 600;
+}
+
+.commentOption button {
+    margin-top: 4vw !important;
+    width: 40% !important;
+    height: 10vw !important;
+    font-size: 6vw !important;
+    font-weight: 900 !important;
+    background-color: #C3DCE8;
+    border: none ;
+    color: #F88372;
+    border-radius: 15px;
+    outline: none;
+    cursor: pointer;
+    box-shadow: 2px 2px 5px #8ea1a9,
+               -5px -5px 10px #f8ffff;
+}
+
+.commentOption button:focus {
+    color: #001F3F;
+    box-shadow: inset 2px 2px 5px #babecc,
+                inset -5px -5px 10px #ffffff73 !important;
+}
+
+.commentCross{
+    color: red;
+    font-size: 5vw;
+    position: absolute;
+    right: 6%;
+    top: 4%;
+}
+
+#customSuccessAlert{
+    margin-top: 3vw;
+    margin-left: 5vw;
+    font-size: 3.5vw;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    gap: 2vw;
+    align-items: center;
+    padding-top: 2.5vw;
+    padding-bottom: 2.5vw;
+    padding-left: 2vw; 
+    color: rgb(10, 199, 10);
+    border-radius: 7px;
+    background: linear-gradient(145deg, #b0c6d1, #d1ebf8);
+    box-shadow:  3px 3px 5px #bbd3df,
+             -3px -3px 5px #cbe5f1; 
+}
+
+#customSuccessAlert #icon{
+    margin-top: 1vw;
+    font-size: 3.5vw;
+}

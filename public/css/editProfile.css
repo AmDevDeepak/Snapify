@@ -1,0 +1,126 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    font-family: 'Nunito', sans-serif;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    background-color: #C3DCE8;
+    color: #001F3F;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.edit-profile {
+    background-color: #C3DCE8;
+    width: 95%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+form {
+    height: 80%;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12vw;
+    margin-top: 10vw;
+}
+
+.edit-profile .text {
+    font-size: 10vw;
+    font-weight: 600;
+    margin-top: 10vw;
+    color: #001F3F;
+}
+
+.field {
+    height: 13vw;
+    width: 100%;
+    display: flex;
+    position: relative;
+    align-items: center;
+}
+
+#txtar{
+    padding-top: 3vw !important;
+    padding-left: 3.3vw !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.field input, textarea {
+    height: 100% !important;
+    width: 100% !important;
+    padding-left: 3.3vw !important;
+    font-size: 3.5vw !important;
+    font-weight: 600 !important;
+    outline: none !important;
+    border: none !important;
+    color: #595959 !important;
+    border-radius: 25px !important;
+    background: #C3DCE8 !important;
+    box-shadow: inset 5px 5px 10px #babecc,
+                inset -5px -5px 10px #ffffff73 !important;
+}
+
+.field input:focus {
+    box-shadow: inset 3px 3px 4px #babecc,
+                inset -3px -3px 4px #ffffff73 !important;
+}
+
+textarea:focus {
+    box-shadow: inset 3px 3px 4px #babecc,
+                inset -3px -3px 4px #ffffff73 !important;
+}
+
+.field label {
+    pointer-events: none;
+    color: #666666;
+    position: absolute;
+    top: -50% !important;
+    left: 1% !important;
+    font-size: 4vw !important;
+    font-weight: 600 !important;
+}
+
+button {
+    margin: 2vw 0 !important;
+    width: 100%;
+    height: 13vw;
+    font-size: 5vw !important;
+    font-weight: 900 !important;
+    background-color: #C3DCE8 !important;
+    border: none !important;
+    color: #F88372 !important;
+    border-radius: 25px !important;
+    outline: none !important;
+    cursor: pointer;
+    box-shadow: 2px 2px 5px #8ea1a9,
+               -5px -5px 5px #f8ffff;
+}
+
+button:focus {
+    color: #3498db !important;
+    box-shadow: inset 2px  2px 2px 5px #babecc,
+                inset -5px -5px 10px #ffffff73 !important;
+}                
+
+.f-icons a {
+    font-size: 40px;
+    color: #001F3F;   
+}    
