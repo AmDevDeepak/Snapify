@@ -125,14 +125,14 @@ nav .name img{
 .userDetails .username{
     /* background-color: red; */
     display: flex;
-    gap: 2vw;
-    font-size: 3.5vw;
+    gap: 1.2vw;
+    font-size: 3.8vw;
     font-weight: 600;
     margin-top: -1.3vw;
 }
 
 .userDetails .username i{
-    font-size: 3vw;
+    font-size: 3.8vw;
     line-height: 1;
     font-weight: 400;
     color: blue;

@@ -13,7 +13,7 @@ const postStorage = new CloudinaryStorage({
   params: {
     folder: "SnapifyPost",
     allowedFormats: ["png", "jpg", "jpeg"],
-    transformation: [{ width: 350, crop: "fill", quality: "auto" }],
+    transformation: [{ width: 350, crop: "fill", quality: "90" }],
   },
 });
 

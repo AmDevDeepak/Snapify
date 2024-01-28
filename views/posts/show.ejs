@@ -76,7 +76,12 @@
             <div class="liker">
                 <a class="user-det" href="/profile/<%=liker._id%>">
                 <img src="<%= liker.dp.url %>" alt="<%= liker.name %>'s DP">
-                <p><%= liker.name %></p>
+                <p>
+                    <%= liker.name %>
+                     <% if (post.owner.id === "65b653e15acff8a5350515ed" || post.owner.id === "65b65ee057a34358b20b1c1c") { %>
+                      <i class="fa-solid fa-circle-check" style="color: blue;"></i>
+                    <% } %>
+                </p>
                 </a>
                 <div class="icon"><img src="/images/chat.png" alt=""></div>
             </div>
@@ -95,7 +100,12 @@
                                 <div class="user-time">
                                     <a style="text-decoration: none; font-weight: 600;" href="/profile/<%=comment.commenter._id%>" class="userAndimg">
                                         <img src="<%= comment.commenter.dp.url  %>" alt="">
-                                        <p><%= comment.commenter.name %></p>
+                                        <p>
+                                            <%= comment.commenter.name %>
+                                            <% if (post.owner.id === "65b653e15acff8a5350515ed" || post.owner.id === "65b65ee057a34358b20b1c1c") { %>
+                                            <i class="fa-solid fa-circle-check"></i>
+                                             <% } %>
+                                        </p>
                                     </a>    
                                     <p style="font-size: 2.8vw; font-weight: 400; color: #5c5555c7;"><%= new Intl.DateTimeFormat('en-US', { day: 'numeric', month: 'short', year: 'numeric' }).format(comment.createdAt) %></p>
                                 </div>
