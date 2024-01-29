@@ -27,9 +27,9 @@ const dpStorage = new CloudinaryStorage({
       {
         width: 350,
         height: 350,
-        crop: "thumb",
+        crop: "fill",
         gravity: "face",
-        quality: "auto",
+        quality: "85",
       },
     ],
   },
