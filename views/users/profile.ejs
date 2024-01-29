@@ -51,10 +51,11 @@
                         <form action="/logout" method="get">
                             <button>Logout</button>
                         </form>
-                    <% } else { %>
                         <form action="/posts" method="get">
                             <button>Feed</button>
                         </form>
+                    <% } else { %>
+                       <h2 style="font-size: 5vw;"><%=user.name%>'s Posts</h2>
                     <% } %>
                 </div>
                 <div class="posts-container">
