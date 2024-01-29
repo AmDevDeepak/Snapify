@@ -49,8 +49,6 @@
                 <h3>
                     <span style="color: #001F3F; font-weight: 600;">Posted on : </span>
                     <%= new Intl.DateTimeFormat('en-US', { day: 'numeric', month: 'short', year: 'numeric' }).format(post.createdAt) %>
-                    ,
-                    <%= new Intl.DateTimeFormat('en-US', { timeStyle: 'short' }).format(post.createdAt) %> from
                     <%=post.location%>
                 </h3>
             </div>
