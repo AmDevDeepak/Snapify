@@ -77,7 +77,7 @@
                 <img src="<%= liker.dp.url %>" alt="<%= liker.name %>'s DP">
                 <p>
                     <%= liker.name %>
-                     <% if (post.owner.id === "65b653e15acff8a5350515ed" || post.owner.id === "65b65ee057a34358b20b1c1c") { %>
+                     <% if (liker.id === "65b653e15acff8a5350515ed" || liker.id === "65b65ee057a34358b20b1c1c") { %>
                       <i class="fa-solid fa-circle-check" style="color: blue;"></i>
                     <% } %>
                 </p>
@@ -101,7 +101,7 @@
                                         <img src="<%= comment.commenter.dp.url  %>" alt="">
                                         <p>
                                             <%= comment.commenter.name %>
-                                            <% if (post.owner.id === "65b653e15acff8a5350515ed" || post.owner.id === "65b65ee057a34358b20b1c1c") { %>
+                                            <% if (comment.commenter.id === "65b653e15acff8a5350515ed" || comment.commenter.id === "65b65ee057a34358b20b1c1c") { %>
                                             <i class="fa-solid fa-circle-check"></i>
                                              <% } %>
                                         </p>
